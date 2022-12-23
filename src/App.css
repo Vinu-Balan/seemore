@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* overflow-y: hidden; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  top: 50px;
+  position:absolute;
+  background:url('images/background-seemore.gif') repeat;
+  min-height: 150%;
+  min-width: 100%;
+  z-index: -1;
+  background-color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  height:50px;
+  background-color: black;
+  color: #ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+.Header ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;  
+  margin: 5px;
+  padding: 10px;
+}
+.Header li:hover{
+  cursor: pointer;
+  background-color: orangered;
+  transition: 200ms;
+}
+.Header li{
+  text-decoration: none;
+  color: #ffff;
+  width:max-content;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.logo{
+  width: 100px;
+  margin: 5px;
+  padding: 10px;
+  text-decoration:none;
+  color: #ffff;
+}
+.Header .login{
+  justify-items: flex-end;
+  margin: 10px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffff;
+}
+.Header .login:hover{
+  background-color: orangered;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  transition: 300ms;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.Contentback{
+  min-height: 100%;
+}
+.Content{
+  height: 150%;
+  padding-bottom: 5%;
+}
+.Content .tag-content{
+  max-width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  color: #ffff;
+}
+.Content h1{
+  font-size: 50px;
+}
+.Content span{
+  font-size: 37px;
+  font-weight: 700;
+}
+.Content .option-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 5%;
+}
+.Content .chat-content{
+  background-color: #ffff;
+  margin: 10px;
+  min-width: 30%;
+  max-width: 300px;
+  border: 1px solid rgb(113, 113, 113);
+  padding: 20px;
+  border-radius: 30px;
+}
+.Content .start{
+  cursor: pointer;
+  font-size: larger;
+  width: 100%;
+  border: 0px;
+  background-color: orangered;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+.Content .start a{
+  text-decoration: none;
+  color: #ffff;
 }
 
-.App-link {
-  color: #61dafb;
+.packages{
+  align-self: center;
+  color: #000;
+  margin-left: 30%;
+  margin-top: 20px;
+  text-align: center;
+}
+.package{
+  background-color: #ffff;
+  padding: 10px;
+  width: 60%;
+  height: 10%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.package span{
+  font-size: 15px;
+}
+.package button{
+  background-color: orangered;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+/* responsive design */
+@media only screen and (max-width: 600px){
+  .Header ul{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .package{
+    width: 90%;
+    margin-left: 0%;
+  }
+  .packages{
+    margin-left: 5%;
+  }
+  .Content span{
+    font-size: 20px;
+  }
+  .Content h1{
+    font-size: 30px;
   }
 }
