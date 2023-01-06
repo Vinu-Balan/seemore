@@ -4,6 +4,7 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Content from './Components/Content';
 import Header from './Components/Header';
 import Trackgoods from './Components/Trackgoods';
+import MapTrack from './Components/MapTrack';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Content />} />
       <Route path='/trackgoods' element={<Trackgoods />} />
+      <Route path='/trackgoods/location' element={<MapTrack />} />
     </Routes>
     </div>
     </BrowserRouter>

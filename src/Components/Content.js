@@ -16,9 +16,11 @@ const Content = (props) => {
         Track your goods
         </h3>
         <br></br>
+        <Link to="/trackgoods">
         <button type='button' className='start'>
-        <a href='#'><Link to="/trackgoods">Explore</Link> </a>
+        <a href='#'>Explore</a>
         </button>
+        </Link>
         </div>
         <div className='chat-content'>
         <h3>

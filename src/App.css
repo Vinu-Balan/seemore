@@ -1,4 +1,5 @@
 *{
+  text-decoration: none;
   margin: 0;
   padding: 0%;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -8,7 +9,7 @@
   top: 50px;
   position:absolute;
   background:url('images/background-seemore.gif') repeat;
-  min-height: 100%;
+  min-height: 92%;
   min-width: 100%;
   z-index: -1;
   background-color: black;
@@ -35,7 +36,7 @@
 }
 .Header li:hover{
   cursor: pointer;
-  background-color: orangered;
+  background-color: #00009e;
   transition: 200ms;
 }
 .Header li{
@@ -65,7 +66,7 @@
   color: #ffff;
 }
 .Header .login:hover{
-  background-color: orangered;
+  background-color: #00009e;
 
   transition: 300ms;
 }
@@ -99,7 +100,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 .Content .chat-content{
   background-color: #ffff;
@@ -115,7 +116,7 @@
   font-size: larger;
   width: 100%;
   border: 0px;
-  background-color: orangered;
+  background-color: #00009e;
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
@@ -143,12 +144,14 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  margin: 10px;
 }
 .package span{
   font-size: 15px;
 }
 .package button{
-  background-color: orangered;
+  background-color: #00009e;
+  font-size: 20px;
   color: #ffff;
   padding: 10px;
   border-radius: 10px;
@@ -157,13 +160,41 @@
   cursor: pointer;
 }
 
-
+/* Map Component */
+.map-content{
+  margin-top: 1%;
+  color: #ffff;
+  margin-bottom: 5%;
+}
+.map{
+  height: 40%;
+  width: 50%;
+}
+.map-content h2{
+margin: 10px;
+}
+.d-contact{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #00009e;
+  width: 50%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 1%;
+}
+.acc{
+  height: 15%;
+  width: 15%;
+  border-radius: 50%;
+}
 
 
 /* responsive design */
 @media only screen and (max-width: 600px){
   .Header ul{
     display: none;
+  }
+  .Content .tag-content{
+    width: 90%;
   }
   .package{
     width: 90%;
@@ -177,5 +208,18 @@
   }
   .Content h1{
     font-size: 30px;
+  }
+  .map{
+    height: 80%;
+    width: 90%;
+  }
+  .d-contact{
+    margin-top: 10%;
+    width: 80%;
+  }
+  .acc{
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
   }
 }
