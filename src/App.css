@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
   text-decoration: none;
   margin: 0;
@@ -89,7 +92,7 @@
   color: #ffff;
 }
 .Content h1{
-  font-size: 50px;
+  font-size: 70px;
 }
 .Content span{
   font-size: 37px;
@@ -106,7 +109,6 @@
   background-color: #ffff;
   margin: 10px;
   min-width: 30%;
-  max-width: 300px;
   border: 1px solid rgb(113, 113, 113);
   padding: 20px;
   border-radius: 30px;
@@ -186,6 +188,71 @@ margin: 10px;
   width: 15%;
   border-radius: 50%;
 }
+/* FindRetailers */
+.retailers-content{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+.search-container{
+  margin-left: 10%;
+  margin: 5%;
+  width: 80%;
+  border-radius: 10px;
+  height: 40px;
+  background-color: #ffff;
+}
+.search-bar{
+  width: 90%;
+  height: 70%;
+  margin: 5px;
+}
+.search-icon{
+  fill: #000;
+  margin-top: 5px;
+  padding: 5px;
+}
+.retailers-list{
+  margin-left: 10%;
+  margin: 5%;
+  width: 80%;
+  border-radius: 10px;
+  height: max-content;
+  background-color: #ffff;
+}
+.retailers-list h3{
+  padding: 10px;
+}
+.retailer-search-result{
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  background-color: #e2fdff;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #00009e;
+}
+.search-profile-pic{
+  height: 70%;
+  border-radius: 100%;
+  padding: 10px;
+  padding-left: 20px;
+}
+.search-profile{
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.location-text{
+  font-weight: 200;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.search-contact{
+  padding: 20px;
+  font-weight: 800;
+}
 
 
 /* responsive design */
@@ -209,6 +276,9 @@ margin: 10px;
   .Content h1{
     font-size: 30px;
   }
+  .Content .chat-content{
+    width: 150px;
+  }
   .map{
     height: 80%;
     width: 90%;
@@ -221,5 +291,21 @@ margin: 10px;
     height: 30%;
     width: 30%;
     border-radius: 50%;
+  }
+  .retailer-search-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    background-color: #c1faff;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 10px;
+  }
+  .search-profile-pic{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    padding: 10px;
+    padding-left: 20px;
   }
 }

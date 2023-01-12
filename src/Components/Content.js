@@ -27,9 +27,11 @@ const Content = (props) => {
         Find Retailers
         </h3>
         <br></br>
+        <Link to="/retailers" >
         <button type='button' className='start'>
         <a href='#'>Explore</a>
         </button>
+        </Link>
         </div>
         <div className='chat-content'>
         <h3>

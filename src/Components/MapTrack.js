@@ -34,7 +34,7 @@ export default function MapTrack(){
     // </div>
     <div className=''>
     <center className='map-content'>
-    <h2>Your Package is currently here!</h2>
+    <h2 className='font-bold'>Your Package is currently here!</h2>
     <h2>Package ID: 12423</h2>
     <img src={map_pic} className="map" alt='tracking_map' width="40%" height="40%" />
     <div className='col d-contact'>
