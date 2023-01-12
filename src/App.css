@@ -213,13 +213,14 @@ margin: 10px;
   fill: #000;
   margin-top: 5px;
   padding: 5px;
+  height: 30px;
 }
 .retailers-list{
   margin-left: 10%;
   margin: 5%;
   width: 80%;
   border-radius: 10px;
-  height: max-content;
+  /* height: max-content; */
   background-color: #ffff;
 }
 .retailers-list h3{

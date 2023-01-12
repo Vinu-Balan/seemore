@@ -7,6 +7,8 @@ import Header from './Components/Header';
 import Trackgoods from './Components/Trackgoods';
 import MapTrack from './Components/MapTrack';
 import FindRetailers from './Components/FindRetailers';
+import FindManufacturer from './Components/FindManufacturer';
+import FindDistributors from './Components/FindDistributors';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route path='/trackgoods' element={<Trackgoods />} />
       <Route path='/trackgoods/location' element={<MapTrack />} />
       <Route path='/retailers' element={<FindRetailers />} />
+      <Route path='/manufacturers' element={<FindManufacturer />} />
+      <Route path='/Distributors' element={<FindDistributors />} />
     </Routes>
     </div>
     </BrowserRouter>

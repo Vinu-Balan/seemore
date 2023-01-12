@@ -38,18 +38,22 @@ const Content = (props) => {
         Find Manufacturers
         </h3>
         <br></br>
+        <Link to="/manufacturers">
         <button type='button' className='start'>
         <a href='#'>Explore</a>
         </button>
+        </Link>
         </div>
         <div className='chat-content'>
         <h3>
         View Distributors
         </h3>
         <br></br>
+        <Link to="/distributors">
         <button type='button' className='start'>
         <a href='#'>Explore</a>
         </button>
+        </Link>
         </div>
     </div>     
     </div>
